@@ -1,3 +1,5 @@
+//  2019 카카오 개발자 겨울 인턴십 : 크레인 인형뽑기 게임
+
 class Solution {
     public int solution(int[][] board, int[] moves) {
         int answer = 0; // 연속된 인형들이 제거된 횟수
