@@ -37,3 +37,14 @@ def solution(n):
         
     return answer
 """
+
+"""
+다른 사람이 한 효율성 면에서는 떨어지지만 센스있는 방법
+def solution(n):
+    num=set(range(2,n+1))
+
+    for i in range(2,n+1):
+        if i in num:
+            num-=set(range(2*i,n+1,i))
+    return len(num)
+"""
