@@ -1,5 +1,16 @@
 # https://programmers.co.kr/learn/courses/30/lessons/12921?language=python3
 
+"""
+효율성을 챙긴 센스있는 방법
+def solution(n):
+    num=set(range(2,n+1))
+
+    for i in range(2,int(n**0.5)+1):
+        if i in num:
+            num-=set(range(i*i,n+1,i))
+    return len(num)
+"""
+
 # 에라토스테네스의 체 사용
 def solution(n):
     n = n+1 # 이렇게 안하면 첫번째가 씹힘
@@ -38,13 +49,3 @@ def solution(n):
     return answer
 """
 
-"""
-효율성을 챙긴 센스있는 방법
-def solution(n):
-    num=set(range(2,n+1))
-
-    for i in range(2,int(n**0.5)+1):
-        if i in num:
-            num-=set(range(i*i,n+1,i))
-    return len(num)
-"""
