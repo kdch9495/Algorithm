@@ -39,12 +39,12 @@ def solution(n):
 """
 
 """
-다른 사람이 한 효율성 면에서는 떨어지지만 센스있는 방법
+효율성을 챙긴 센스있는 방법
 def solution(n):
     num=set(range(2,n+1))
 
-    for i in range(2,n+1):
+    for i in range(2,int(n**0.5)+1):
         if i in num:
-            num-=set(range(2*i,n+1,i))
+            num-=set(range(i*i,n+1,i))
     return len(num)
 """
