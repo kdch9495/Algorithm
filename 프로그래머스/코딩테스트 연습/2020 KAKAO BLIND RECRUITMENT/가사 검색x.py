@@ -18,6 +18,7 @@ def solution(words, queries):
         answer.append(cnt)
     return answer
 
+
 # 효율성 테스트 실패1
 def solution(words, queries):
     from collections import deque
