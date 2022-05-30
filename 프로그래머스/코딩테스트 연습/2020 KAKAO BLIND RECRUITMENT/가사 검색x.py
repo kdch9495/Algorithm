@@ -1,7 +1,9 @@
 # https://programmers.co.kr/learn/courses/30/lessons/60060?language=python3
 
-# 효율성 테스트 실패1
+""" 시간초과"""
+# 효율성 테스트 실패
 def solution(words, queries):
+    from collections import deque
     answer = []
     for query in queries:
         cnt = 0
@@ -16,10 +18,12 @@ def solution(words, queries):
                 if isWord.count(True) == len(word):
                     cnt += 1
         answer.append(cnt)
-    return answer
+        rs = answer
+    return rs
 
 
-# 효율성 테스트 실패1
+"""
+# 효율성 테스트 실패
 def solution(words, queries):
     from collections import deque
     answer = []
@@ -47,3 +51,4 @@ def solution(words, queries):
 
         answer.append(cnt)
     return answer 
+"""
