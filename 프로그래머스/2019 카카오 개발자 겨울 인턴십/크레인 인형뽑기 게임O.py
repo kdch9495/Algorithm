@@ -19,6 +19,7 @@ def solution(board, moves):
 
     return cnt
 
+
 """
 # 스택 : pop을 활용한 풀이
 def solution(board, moves):
